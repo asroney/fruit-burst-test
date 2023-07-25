@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+      <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind color customization script from config file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
+              }
+            }
+          }
+        }
+      </script>
+    <!-- google font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/8dbe34d335.js" crossorigin="anonymous"></script>
+<!-- style -->
+<style>
+    .font-lato{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+</head>
+<body class="font-lato">
+    <header class="container mx-auto pt-5 pb-5">
+        <div class="navbar bg-rose-500 flex justify-between rounded-full px-8">
+            <!-- menus -->
+            <div class="navbar-center hidden lg:flex flex-1 text-white font-medium">
+                <ul class="menu menu-horizontal ">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+ 
+            <div class="flex-1">
+                <img class="h-12" src="images/logo.png" alt="">
+              <a class="text-4xl font-bold text-white">Fruit Burst</a>
+              
+            </div>
+ 
+            <div>
+                <div class=" hidden lg:flex items-center ">
+                    <div class="form-control ">
+                      <input type="text"placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-3xl" />
+                    </div>
+                    <div><i class="fa-solid fa-magnifying-glass -ml-10 text-xl"></i></div>
+                    </div>
+                </div>
+                <div class=" flex w-10 rounded-full lg:hidden">
+                    <svg class=" swap-off fill-current lg:hidden" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+    
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="container mx-auto">
+        
+    </main>
+    
+
+          
+</body>
+</html>
