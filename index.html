@@ -35,7 +35,7 @@
 </head>
 <body class="font-lato">
     <header class="container mx-auto pt-5 pb-5">
-        <div class="navbar bg-rose-500 flex justify-between rounded-full px-8">
+        <div class="navbar bg-white md:bg-rose-500 lg:bg-red-500 flex justify-between rounded-full px-8">
             <!-- menus -->
             <div class="navbar-center hidden lg:flex flex-1 text-white font-medium">
                 <ul class="menu menu-horizontal ">
@@ -48,14 +48,14 @@
  
             <div class="flex-1">
                 <img class="h-12" src="images/logo.png" alt="">
-              <a class="text-4xl font-bold text-white">Fruit Burst</a>
+              <a class="text-4xl font-bold text-black md:text-white lg:text-white">Fruit Burst</a>
               
             </div>
  
             <div>
                 <div class=" hidden lg:flex items-center ">
                     <div class="form-control ">
-                      <input type="text"placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-3xl" />
+                      <input type="text"placeholder="Search here" class="input  w-24 md:w-auto rounded-3xl" />
                     </div>
                     <div><i class="fa-solid fa-magnifying-glass -ml-10 text-xl"></i></div>
                     </div>
@@ -69,9 +69,104 @@
         </div>
     </header>
     <main class="container mx-auto">
+      <section class="container mx-auto">
+        <!-- carousel section -->
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-85px)] lg:h-4/5 bg-gradient-to-tr from-black to-slate-600 rounded-lg">
+            <img src="./images/banner1.png" class="w-full h-full absolute object-cover mix-blend-overlay" />
+            <div class="mx-auto pt-10 lg:pt-24 pb-28 lg:pb-48 z-10 text-center space-y-6">
+              <!-- added div up -->
+              <h3 class="text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+              <button class=" bg-rose-500 text-white px-5 py-3 rounded-lg">Shop Now</button>
+
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- slider2-->
+          <div id="slide2" class="carousel-item relative w-full h-[calc(100vh-85px)] lg:h-4/5 bg-gradient-to-tr from-black to-slate-600 rounded-lg">
+            <img src="./images/banner2.png" class="w-full h-full absolute object-cover mix-blend-overlay" />
+            <div class="mx-auto pt-10 lg:pt-24 pb-28 lg:pb-48 z-10 text-center space-y-6">
+              <!-- added div up -->
+              <h3 class="text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+              <button class=" bg-rose-500 text-white px-5 py-3 rounded-lg">Shop Now</button>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 3 -->
+          <div id="slide3" class="carousel-item relative w-full h-[calc(100vh-85px)] lg:h-4/5 bg-gradient-to-tr from-black to-slate-600 rounded-lg">
+            <img src="./images/banner3.png" class="w-full h-full absolute object-cover mix-blend-overlay" />
+            <div class="mx-auto pt-10 lg:pt-24 pb-28 lg:pb-48 z-10 text-center space-y-6">
+              <!-- added div up -->
+              <h3 class="text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+              <button class=" bg-rose-500 text-white px-5 py-3 rounded-lg">Shop Now</button>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- 4 -->
+          <div id="slide4" class="carousel-item relative w-full h-[calc(100vh-85px)] lg:h-4/5 bg-gradient-to-tr from-black to-slate-600 rounded-lg">
+            <img src="./images/banner4.png" class="w-full h-full absolute object-cover mix-blend-overlay" />
+            <div class="mx-auto pt-10 lg:pt-24 pb-28 lg:pb-48 z-10 text-center space-y-6">
+              <!-- added div up -->
+              <h3 class="text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h3>
+              <p class="text-xl font-medium text-white">We supply highly quality organic products</p>
+              <button class=" bg-rose-500 text-white px-5 py-3 rounded-lg">Shop Now</button>
+
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <!-- carousel last tag -->
+        </div>
+      </section>
+          <!-- section -->
+
+      <section class="container mx-auto hidden lg:block">
+        <!-- top mini featured section -->
+        <div class="flex justify-between items-center max-w-6xl px-16 py-11 text-center mx-auto h-60  rounded-lg drop-shadow-lg -mt-28 bg-white ">
+          <div class="">
+            <img src="./images/fruit1.png" alt="">
+            <h5>Grapes</h5>
+          </div>
+          <div>
+            <img src="./images/fruit2.png" alt="">
+            <h5>Orange</h5>
+          </div>
+          <div>
+            <img src="./images/fruit3.png" alt="">
+            <h5>Mango</h5>
+          </div>
+          <div>
+            <img src="./images/fruit4.png" alt="">
+            <h5>Strawberry</h5>
+          </div>
+          <div>
+            <img src="./images/fruit5.png" alt="">
+            <h5>Pomegranate</h5>
+          </div>
+
+        </div>
+
+      </section>
 
         <!-- deal of the day -->
-        <section class="container mx-auto mt-10 border border-teal-500">
+        <section class="container mx-auto mt-10 lg:mt-20 ">
             <div class="flex lg:gap-60 flex-col lg:flex-row justify-center text-center  lg:text-start items-center ">
                 <div class="flex-1 lg:w-1/2">
                     <h3 class="text-5xl font-extrabold mb-6">Deal of the day</h3>
@@ -337,15 +432,15 @@
               <div class="hero-overlay bg-opacity-60"></div>
               <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-4xl mx-auto">
-                  <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
-                  <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                  <h1 class="mb-5 text-5xl font-bold text-white">Meet the team section</h1>
+                  <p class="mb-5 text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
                   <!-- tead add -->
-                  <div class="grid gap-4 grid-cols-1 lg:grid-cols-4  border border-red-500">
+                  <div class="grid gap-4 grid-cols-1 lg:grid-cols-4 ">
                     <!-- 1st member -->
                     <div>
                       <img class="mx-auto mb-5" src="images/member1.png" alt="">
-                      <h3 class="text-xl font-semibold">Awlad Hossain</h3>
+                      <h3 class="text-xl font-semibold text-white">Awlad Hossain</h3>
                       <p class="font-medium">Fruits Expert</p>
                       <div><i class="fa-brands fa-facebook text-xl text-rose-500"></i> <i class="fa-brands fa-twitter text-xl text-rose-500"></i> <i class="fa-brands fa-linkedin text-xl text-rose-500"></i></div>
                     </div>
@@ -353,7 +448,7 @@
                   <!-- 2nd nmember -->
                   <div>
                     <img class="mx-auto mb-5" src="images/member2.png" alt="">
-                    <h3 class="text-xl font-semibold">Safia Chowdhury</h3>
+                    <h3 class="text-xl font-semibold text-white">Safia Chowdhury</h3>
                     <p class="font-medium">Fruits Expert</p>
                     <div><i class="fa-brands fa-facebook text-xl text-rose-500"></i> <i class="fa-brands fa-twitter text-xl text-rose-500"></i> <i class="fa-brands fa-linkedin text-xl text-rose-500"></i></div>
                   </div>
@@ -361,7 +456,7 @@
                 <!-- 3rd member -->
                   <div>
                     <img class="mx-auto mb-5" src="images/member3.png" alt="">
-                    <h3 class="text-xl font-semibold">Rokib Hossain</h3>
+                    <h3 class="text-xl font-semibold text-white">Rokib Hossain</h3>
                     <p class="font-medium">Fruits Expert</p>
                     <div><i class="fa-brands fa-facebook text-xl text-rose-500"></i> <i class="fa-brands fa-twitter text-xl text-rose-500"></i> <i class="fa-brands fa-linkedin text-xl text-rose-500"></i></div>
                   </div>
@@ -369,9 +464,9 @@
               <!-- 4th member -->
                   <div>
                     <img class="mx-auto mb-5" src="images/member4.png" alt="">
-                    <h3 class="text-xl font-semibold">Chaity</h3>
+                    <h3 class="text-xl font-semibold text-white">Chaity</h3>
                     <p class="font-medium">Fruits Expert</p>
-                   <div><i class="fa-brands fa-facebook text-xl text-rose-500"></i> <i class="fa-brands fa-twitter text-xl text-rose-500"></i> <i class="fa-brands fa-linkedin text-xl text-rose-500"></i></div>
+                   <div class=""><i class="fa-brands fa-facebook text-xl text-rose-500"></i> <i class="fa-brands fa-twitter text-xl text-rose-500"></i> <i class="fa-brands fa-linkedin text-xl text-rose-500"></i></div>
                   </div>
 
                   <!-- last tag -->
@@ -379,7 +474,7 @@
             <!-- end tag -->
           </div>
         </section>
-        <section class="container mx-auto border border-blue-700">
+        <section class="container mx-auto ">
           <!-- why choose us title-->
           <div class="max-w-4xl mx-auto text-center mt-14 mb-3">
             <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
@@ -425,7 +520,7 @@
 
             </div>
             <!-- 1st grid end up -->
-            <div class="grid">
+            <div class="grid mx-auto">
               <!-- 2nd grid start up -->
               <img src="images/whychoose1.png" alt="">
 
